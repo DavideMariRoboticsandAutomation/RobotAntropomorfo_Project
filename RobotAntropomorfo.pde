@@ -1,5 +1,5 @@
 /*                                                                                                                            
-                                                                                                          Progetto 2022-2023  Robot Antropomorfo che lavora in cinematica inversa Davide MARI 
+                                                     Progetto 2022-2023  Robot Antropomorfo che lavora in cinematica inversa Davide MARI 
 
 Funzioni Robot Antropomorfo:
     Con le frecce Giù e Su si modifica l'altezza della vista sul robot
@@ -8,7 +8,7 @@ Funzioni Robot Antropomorfo:
     Con le frecce Destra e Sinistra si aumenta o diminuisce la velocità Kp con cui il robot compie i propri movimenti
     
 */
-                                                                                                                                    //INIZIALIZZAZIONE PARAMETRI
+                                                                            //INIZIALIZZAZIONE PARAMETRI
                                                                                                                                     
 // Parametro della funzione camera() che viene modificato con le frecce SU e GIU e determina l'altezza della vista rispetto al robot
 float eyeY = 0;
@@ -205,7 +205,7 @@ void draw()
     }
   }
   Testi();
-                                                                                                                                          //Inizializzo Matrice Re
+                                                                      //Inizializzo Matrice Re
 //Inizializzo delle variabili che mi servono per creare la matrice Re richiesta nel testo(lo faccio per non ripetere i vari sin e cos al momento della creazione di Re)                                                                                                                                //
       r11= cos(alpha_d)*sin(beta_d)*cos(theta_d)-sin(alpha_d)*sin(theta_d); 
       r21= sin(alpha_d)*sin(beta_d)*cos(theta_d)+cos(alpha_d)*sin(theta_d); 
@@ -234,7 +234,7 @@ scriviMatrice("Re :", Re, 20,350);
     ANTROPOMORFO();
  
 }
-                                                                                                    //FUNZIONE PER LA CREAZIONE DEL ROBOT ANTROPOMORFO
+                                                       //FUNZIONE PER LA CREAZIONE DEL ROBOT ANTROPOMORFO
 void ANTROPOMORFO() {
   
  fill(#00FFFF);
@@ -353,7 +353,7 @@ void riferimento_finale()
    text("Z_6", 0, 0,130);
 }
 
-                                                                    // FUNZIONE PER LA CINEMATICA INVERSA(Uso formule studiate inerenti alla cinematica inversa del robot antropomorfo)
+                              // FUNZIONE PER LA CINEMATICA INVERSA(Uso formule studiate inerenti alla cinematica inversa del robot antropomorfo)
 
 void cinematicainversa(float [][]Re)
 {
@@ -554,8 +554,7 @@ void Testi()
   text(zd,430,120);
   
 }
-
-                              ///////////////////////////////////////////////////////////////////////////////////FUNZIONI AUSILIARIE /////////////////////////////////////////////////////////////////
+ ///////////////////////////////////////////////////////////////////////////////////FUNZIONI AUSILIARIE /////////////////////////////////////////////////////////////////
 float[][] mProd(float[][] A,float[][] B) // Calcola prodotto di due matrici A e B
 {
   int nA = A.length;
