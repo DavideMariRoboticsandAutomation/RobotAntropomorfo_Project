@@ -1,3 +1,28 @@
+This is a project I created with the PROCESSING software during my university studies.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+For those unfamiliar with PROCESSING: It is an open-source development environment used to create interactive graphics applications, data visualizations, animations, generative art, and more. It is based on the Java programming language and is designed to be easy to learn and use, even for those without extensive programming knowledge. Processing provides a wide range of functions and graphics libraries to make creating images and animations easier and faster. Additionally, third-party libraries can be integrated to extend Processing's core functionality. It was created for use by both artists and programmers and to support a wide range of applications, from digital art to scientific data processing. It is available free of charge and can run on various platforms, including Windows, Mac OS X, and Linux.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TRACK Project:
+
+Using Processing, design an ANTHROPOMORPHIC robot operated using INVERSE KINEMATICS. The desired position (xd,yd,zd) of the gripper and its orientation must be editable via the keyboard. Specifically, for the gripper position, the xd, yd, and zd coordinates can be modified as follows: lowercase x decreases the xd coordinate, while uppercase X increases it. Similarly, the letters y and z can be used for the yd and zd coordinates.
+For the desired orientation of the gripper, i.e., the Re matrix, proceed as follows. Identify the z6 axis of the gripper using the azimuth angles α and β with respect to the base system (x0,y0,z0) (refer to this figure), and define x6 and y6 followed by a rotation of an angle θ around the z6 axis. This can be demonstrated to correspond to a ZYZ-type parameterization of the desired rotation matrix Re, with angles (α, 90o-β, θ), which therefore coincides with the expression of the spherical wrist matrix R36 in which α must be substituted for θ4, 90o-β for θ5, and θ for θ6. To change the orientation of the gripper, it will therefore be sufficient to act on the variables α, β, and θ by pressing, for example, the following keys: lowercase a to decrease α and uppercase A to increase it, lowercase b to decrease β and uppercase B to increase it, lowercase t to decrease θ and uppercase T to increase it.
+Write the sketch, also taking into account the following specifications:
+Throughout the program's execution, the desired coordinates (xd, yd, zd) for the gripper's position and the values ​​(in degrees) of the angles (α, β, θ) that define the gripper's orientation must be displayed on the screen. The gripper's coordinates must be written using the reference triplet (x0, y0, z0) from the lesson (and not the one used by Processing).
+Also display the desired Re matrix with columns of THREE DIFFERENT COLORS.
+DRAW both the TRIM (x0,y0,z0) of the BASE and the TRIM (x6,y6,z6) of the CLAMP using the SAME COLORS for the three x, y, and z axes as used for the columns of Re (i.e., the x-axis should be drawn in the same color as the first column of Re, the y-axis in the same color as the second column, and the z-axis in the same color as the third column). For simplicity, the axes can be drawn without arrows.
+NEGLECT the problem of COLLISIONS between the various links of the robot.
+For simplicity, the CLAMP can be represented as a simple PARALLELEPIPED.
+Provide the ability to switch from the HIGH ELBOW to the LOW ELBOW solution using the keyboard (for example, with the '+' and '-' keys). Instead, set the solution for the spherical wrist arbitrarily.
+Include the features (already implemented in the various sketches seen in class) that allow: 1) to change the height of the view, 2) to change the value of the control law constant Kp, 3) to move the base of the robot with a mouse click.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Italian Version:
+
 Questo é un mio progetto realizzato con il software PROCESSING durante i miei studi universitari.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
